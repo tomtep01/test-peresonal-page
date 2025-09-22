@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+            color: #1f2937;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 2rem;
+        }
+        .container {
+            max-width: 800px;
+            width: 100%;
+            text-align: center;
+            background-color: #ffffff;
+            border-radius: 1rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            padding: 3rem 2rem;
+        }
+        .button-group {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        .project-button {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1rem;
+            background-color: #e5e7eb;
+            border-radius: 0.75rem;
+            text-decoration: none;
+            color: #1f2937;
+            transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
+        }
+        .project-button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 20px -5px rgba(0, 0, 0, 0.1), 0 6px 10px -3px rgba(0, 0, 0, 0.05);
+            background-color: #d1d5db;
+        }
+        .project-image {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 0.5rem;
+            margin-bottom: 0.75rem;
+        }
+        .project-title {
+            font-size: 1.125rem;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1 class="text-4xl font-bold mb-4">My Projects</h1>
+    <p class="text-gray-600 mb-8 max-w-lg mx-auto leading-relaxed">
+        Welcome to my projects page! Below you'll find a collection of some of my most recent work.
+        Feel free to click on any of the buttons to learn more about each project.
+    </p>
+
+    <div class="button-group">
+
+        <!-- Project 1 -->
+        <a href="#" class="project-button">
+            <img src="https://placehold.co/120x120/E8D2E1/000000?text=Project+1" onerror="this.src='https://placehold.co/120x120/E8D2E1/000000?text=Project+1'" alt="Project 1" class="project-image">
+            <span class="project-title">Awesome App</span>
+        </a>
+
+        <!-- Project 2 -->
+        <a href="#" class="project-button">
+            <img src="https://placehold.co/120x120/A8D2E1/000000?text=Project+2" onerror="this.src='https://placehold.co/120x120/A8D2E1/000000?text=Project+2'" alt="Project 2" class="project-image">
+            <span class="project-title">Creative Website</span>
+        </a>
+
+        <!-- Project 3 -->
+        <a href="#" class="project-button">
+            <img src="https://placehold.co/120x120/C8A2E1/000000?text=Project+3" onerror="this.src='https://placehold.co/120x120/C8A2E1/000000?text=Project+3'" alt="Project 3" class="project-image">
+            <span class="project-title">Game Development</span>
+        </a>
+        
+    </div>
+</div>
+
+</body>
+</html>
